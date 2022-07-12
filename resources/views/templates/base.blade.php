@@ -11,6 +11,7 @@
     @include('partials.header')
 
     @include('partials.footer')
+    <!-- problema qui -->
 
 
 
