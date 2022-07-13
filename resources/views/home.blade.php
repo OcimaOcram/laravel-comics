@@ -6,10 +6,14 @@
     <main>
         <ul>
             @foreach ($comics as $comic)
-                <li>
-                    {{ $comic['title']}}
+            <li>
+                <a href="{{ $comic['link']}}">
+                  <div>
                     <img src= "{{ $comic['thumb'] }}">
-                </li>
+                    <div>{{ $comic['series'] }}</div>
+                  </div>
+                </a>
+              </li>
             @endforeach
         </ul>
     </main>
