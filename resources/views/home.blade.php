@@ -6,7 +6,10 @@
     <main>
         <ul>
             @foreach ($comics as $comic)
-                <li>{{ $comic['title']}}</li>
+                <li>
+                    {{ $comic['title']}}
+                    <img src= "{{ $comic['thumb'] }}">
+                </li>
             @endforeach
         </ul>
     </main>
